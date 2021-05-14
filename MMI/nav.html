@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="Styles.css">
+        <link rel="stylesheet" type="text/css" href="Reset.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link rel= "stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script defer scr="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+        <script>
+        function openSlideMenu(){
+    document.getElementById('menu').style.width = '200px';
+    document.getElementById('content').style.marginLeft = '200px';
+  }
+  function closeSlideMenu(){
+    document.getElementById('menu').style.width = '0';
+    document.getElementById('content').style.marginLeft = '0';
+  }
+    </script>
+    <style>
+        header{
+            background-image: none;
+        }
+        @media (max-width: 991px){
+            .nav-2{
+                background-image: none;
+                background-color: rgb(0, 0, 0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class= "header">
+        <header>
+            <img class= "logo" src="Images/Logo.png">
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class= "checkbtn">
+                    <i class="fa fa-bars"></i>
+                </label>
+                <input type="checkbox" id="check-2">
+                <label for="check" class= "checkbtn-2">
+                    <i class="fa fa-times"></i>
+                </label>
+                <ul>
+                    <div class="pages">
+                        <li id="pages"><a href="index.php" class="index"><i class="fa fa-home"></i> Home</a></li>
+                        <li id="pages"><a href="Login.php" class="lp"><i class="fa fa-sign-in-alt"></i> Login/ Register</a></li>
+                        <li id="pages"><a href="index.php#tp" class="tpp"><i class="fa fa-space-shuttle"></i> Tourist Programme</a></li>
+                        <li id="pages"><a href="index.php#about" id="about-1" class="aboot"><i class="fa fa-users"></i> About</a></li>
+                        <li id="pages"><a href="index.php#fb" id="fb-1" class="fbb"><i class="fa fa-comment"></i> Feedback</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+            <span class="move">
+              <a href="#" class= "open" onclick="openSlideMenu()">
+                <i class="fas fa-bars"></i>
+              </a>
+            </span>
+        
+            <div id="menu" class="nav-2">
+              <a href="#" class="close" onclick="closeSlideMenu()">
+                <i class="fas fa-bars"></i>
+              </a>
+              <a href="index.php" class="index"><i class="fa fa-home"></i> Home</a>
+              <a href="Login.php" class="lp"><i class="fa fa-sign-in-alt"></i> Login/ Register</a>
+              <a href="index.php#tp" class="tpp"><i class="fa fa-space-shuttle"></i> Tourist Programme</a>
+              <a href="index.php#about" class="aboot"><i class="fa fa-users"></i> About</a>
+              <a href="index.php#fb" class="fbb"><i class="fa fa-comment"></i> Feedback</a>
+            </div>
+    </div>
+    </body>
+</html>
